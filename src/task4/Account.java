@@ -1,23 +1,21 @@
 package task4;
 
 public class Account {
+    private double balance;
 
-    public double balance;
-
-
-
-    public void withdraw(double amount) {
-
-        if (amount <= balance) {
-
-            balance -= amount;
-
-        } else {
-
-            System.out.println("Insufficient funds");
-
-        }
-
+    public double getBalance() {
+        return balance;
     }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient funds");
+        }
+    }
 }

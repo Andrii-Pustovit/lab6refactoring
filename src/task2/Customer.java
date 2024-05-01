@@ -1,26 +1,19 @@
 package task2;
 
-public class Customer {
+import java.util.List;
 
-    private Cart cart;
+public class Cart {
 
+    List<Item> items;
 
-
-    public Customer() {
-
-        cart = new Cart();
-
+    public Cart() {
     }
-
-
 
     public void addToCart(Item item) {
 
-        cart.addItem(item);
+        items.addItem(item);
 
     }
-
-
 
     // Інші методи, які використовують cart
 

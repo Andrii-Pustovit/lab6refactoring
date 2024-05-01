@@ -3,11 +3,12 @@ package task3;
 public class DataProcessor {
 
     public void processData(Data data) {
-
-        // Використовується зовнішня бібліотека або сервіс для обробки даних
-
-        ExternalService.processData(data);
-
+        // Викликаємо метод для обробки даних безпосередньо в межах програми
+        processInternalData(data);
     }
 
+    // Метод для обробки даних безпосередньо в межах програми
+    private void processInternalData(Data data) {
+        // Реалізація обробки даних в межах програми
+    }
 }
